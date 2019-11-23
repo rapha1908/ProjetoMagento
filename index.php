@@ -1,10 +1,10 @@
 
 <?php
-$produto1 [
-	'titulo' => 'moto',
-	'descricao' => 'Esse produto é incrivel'
+$produto1 = [
+    'titulo'=> 'moto', 
+    'descricao'=>'Esse produto é incrivel',
 ];
-$produto2 [
+$produto2  = [
 	'titulo' => 'carro',
 	'descricao' => 'Esse produto é incrivel'
 ];
