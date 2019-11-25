@@ -5,26 +5,25 @@
 @import 'layout/geral';
 @import 'layout/navegacao';     
 /*-------- Main Section Start-----------*/
-@import 'layout/header';
+	@import 'layout/header';
 
+  
+	/*-------- About start -----------*/
+	@import 'layout/sobre';
 
-/*-------- About start -----------*/
-@import 'layout/sobre';
+	/*-------- About end -----------*/
+	/*---------Store start -----------*/
+	@import 'layout/loja';
 
-/*-------- About end -----------*/
+	/*-------- About end -----------*/
 
-/*-------- Carrossel start -----------*/
-//@import 'layout/carrossel';
-/*-------- Carrossel end-----------* /
- 
+	
 /*-------- Main Section end -----------*/
 
 /*-------- footer start -----------*/
 @import 'layout/rodape';
 
 /*-------- footer end -----------*/
-   
-     
 
 /*-------- Media Query-----------*/
 
@@ -38,8 +37,6 @@
 			}	
 		}
 	}
-	
-	 
 	   
 }
 

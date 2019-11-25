@@ -96,7 +96,7 @@ $produtos = $produto->exibirTodos();
 					<div class="post-content" data-aos="flip-up">
 						<div class="post-image">
 							<div class="post-title" data-aos="flip-up">
-							<h2><samp class="orange">Adobe Magento</samp> Solution Partner</h2>
+							<h2>Adobe Magento Solution Partner</h2>
 								<p>
 								Com quase uma década de experiência em Portugal
 								e com uma base instalada de mais de 200 clientes em todo o mundo,
@@ -119,23 +119,22 @@ $produtos = $produto->exibirTodos();
 		
 		<!---------  Store Start   --------- -->
 		
-		<section class="container loja-online">
+		<section class="container site-container loja-online">
 			<div class="loja-container" id="loja">
 				<?php foreach ($produtos as $produto) : ?>
-        <h2>
+        <h2><div class="produto">
             <a href="produto.php?id=<?php echo $produto['id']; ?>">
                 <?php echo $produto['titulo']; ?>
             </a>
         </h2>
         <p>
             <?php echo nl2br($produto['descricao']);  ?>
-        </p>
+		</p>
+		<button class="btn">comprar</button>
+		</div>
         <?php endforeach; ?>
     </div>
 			</div>
-		
-		
-		
 		</section>
 		
 		<!---------  Store end   --------- -->

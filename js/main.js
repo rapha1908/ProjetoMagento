@@ -1,20 +1,3 @@
-const responsive = {
-	0:{
-		items:1
-	},
-	320:{
-		items:1
-	},
-	560:{
-		items:2
-	},	
-	960:{
-		items:3
-	},
-	
-}
-
-
 $(function() {
 	$nav = $(".nav");
 	$toggleCollapse = $(".toggle-collpase");
@@ -25,26 +8,22 @@ $(function() {
 		
 	});
 	
-	$(".owl-carousel").owlCarousel({
-		loop:true,
-		autoplay:true,
-		autoplayTimeout:7000,
-		dots:false,
-		nav:true,
-		navText:[$(".owl-navegation .owl-nav-prev"), $(".owl-navegation .owl-nav-next")],
-		responsive:responsive
-	});
-	
 	$(".move-up").click(function(){
 		$("html, body").animate({
 			scrollTop:0
 		},3000);
 	})
 		
-	
 	//Inicialização da animação
 	AOS.init();
 	
 	var scene = document.getElementById('scene');
 	var parallax = new Parallax(scene);
 });
+
+// Testando importação de dados
+function importaDados() {
+	$.get("http://demomagento2-clients.toogas.com/rest/V1/products?searchCriteria", function(data){
+		console.log(data);
+	});
+}

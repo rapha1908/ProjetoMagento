@@ -122,8 +122,6 @@ main .site-background {
 
 /*-------- About start -----------*/
 main .site-container {
-  display: grid;
-  grid-template-columns: 70% 30%;
   margin: 2rem; }
   main .site-container .post-content {
     margin-bottom: 5rem;
@@ -170,9 +168,8 @@ main .site-container {
     border-radius: 2rem; }
 
 /*-------- About end -----------*/
-/*-------- Carrossel start -----------*/
-/*-------- Carrossel end-----------* /
- 
+/*---------Store start -----------*/
+/*-------- About end -----------*/
 /*-------- Main Section end -----------*/
 /*-------- footer start -----------*/
 .rodape {
@@ -249,3 +246,5 @@ main .site-container {
 @media only screen and (max-width: 520px) {
   .nav .toggle-collpase {
     width: 80%; } }
+
+/*# sourceMappingURL=estilos.css.map */
